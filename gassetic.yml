@@ -1,0 +1,57 @@
+requires:
+    concat: gulp-concat
+    uglify: gulp-uglify
+    freeze: gulp-freeze
+    minify-css: gulp-minify-css
+mimetypes:
+    css:
+      dev:
+          outputFolder: web/compiled/css
+          webPath:      /compiled/css
+          tasks: []
+      prod:
+          outputFolder: web/compiled/css
+          webPath:      /compiled/css
+          tasks:
+              - { name: concat, args: '%filename%' }
+              - { name: minify-css }
+        # This is the list of source files to apply the above settings
+      files:
+          frontend.css: # This is the output filename
+              - web/assets/vendor/bootstrap/dist/css/bootstrap.css
+          backend.css:
+              - web/assets/vendor/bootstrap/dist/css/bootstrap.css
+    # Watch these files for changes (optional)
+      watch:
+          - assets/**/*.less
+          - assets/**/*.css
+          - src/**/*.css
+    js:
+      dev:
+         outputFolder: web/tmp/js
+         webPath:      /tmp/js
+         tasks: []
+      prod:
+          outputFolder: web/compiled/js
+          webPath:      /compiled/js
+          tasks:
+              - { name: concat, args: '%filename%' }
+              - { name: uglify, args: { mangle: true } }
+              - { name: freeze }
+      files:
+          bootstrap.js:
+              - web/assets/vendor/bootstrap/js/alert.js
+              - web/assets/vendor/bootstrap/js/button.js
+      watch:
+        - src/**/*.html.twig
+        - app/**/*.html.twig
+# This is the list of files/paths to search and find the replacement tags to insert the
+# generated <script> or stylesheet tags
+
+default:
+    - js
+    - css
+
+replacementPaths:
+    - src/**/*.html.twig
+    - app/**/*.html.twig

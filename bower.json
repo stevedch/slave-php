@@ -1,0 +1,17 @@
+{
+  "name": "tuts-bower",
+  "description": "Example project for tutorial on Bower for Tuts+",
+  "version": "1.0.0",
+  "dependencies": {
+    "modernizr": "*",
+    "bootstrap": "*",
+    "angular-strap": "*",
+    "angular-ui" : "*",
+    "ngInfiniteScroll" : "*",
+    "angular-underscore" : "",
+    "underscore" : "",
+    "angular-bootstrap" : "*",
+    "font-awesome" : "*",
+    "emoji" : "*"
+  }
+}
