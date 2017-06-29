@@ -12,6 +12,10 @@
     "underscore" : "",
     "angular-bootstrap" : "*",
     "font-awesome" : "*",
-    "emoji" : "*"
+    "emoji" : "*",
+    "iron-a11y-keys": "*",
+    "iron-ajax": "*",
+    "paper-button": "*",
+    "paper-input": "*"
   }
 }
