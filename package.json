@@ -1,23 +1,23 @@
 {
-  "name": "s2_mondb_test",
+  "name": "slave-php",
   "version": "0.4.1",
   "description": "Symfony2 Gassetic",
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/stevenorg/s2_mondb_test"
+    "url": "https://github.com/stevedch"
   },
   "keywords": [
     "gulp",
     "assetic",
     "symfony2"
   ],
-  "author": "Steven Delgado <threzstv@gmail.com>",
+  "author": "Steven Delgado <steven.delgado.ch@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stevenorg/s2_mondb_test/"
+    "url": "https://github.com/stevedch"
   },
-  "homepage": "https://github.com/stevenorg/s2_mondb_test",
+  "homepage": "https://github.com/stevedch",
   "dependencies": {
     "del": "^2.0.2",
     "fs": "^0.0.2",
